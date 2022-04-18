@@ -1,0 +1,28 @@
+CREATE DATABASE desafio
+
+CREATE TABLE conteiner (
+  	id serial primary key,
+  	cliente_nome varchar(255) not null,
+	numero_conteiner varchar(11) not null unique,
+  	tipo smallint check (tipo = 20 or tipo = 40) not null,
+  	status varchar (7) check (status = 'Cheio' or status = 'Vazio') not null,
+  	categoria varchar(20) check (categoria = 'Importação' or categoria = 'Exportação') not null
+);
+
+CREATE TABLE tipos_movimentacoes (
+	id serial primary key,
+  	tipo varchar(255)
+);
+
+CREATE TABLE movimentacoes (
+    id serial primary key,
+  	cliente_id integer references conteiner(id) not null,
+  	tipo_movimentacao integer references tipos_movimentacoes(id) not null,
+  	data_hora_inicio timestamp not null,
+  	data_hora_fim timestamp check (data_hora_fim > data_hora_inicio) not null
+);
+
+
+
+
+

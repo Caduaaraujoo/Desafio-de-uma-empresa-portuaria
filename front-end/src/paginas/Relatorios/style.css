@@ -1,0 +1,97 @@
+.conteiner {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.conteiner h1,
+th,
+td {
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+.total-movi {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 15px;
+    width: 75%;
+}
+
+.total-movi h1 {
+    font-size: 20px;
+    color: #093992;
+}
+
+.row {
+    display: flex;
+    gap: 30px;
+}
+
+.tabela table {
+    display: table;
+    border-collapse: separate;
+    border-radius: 10px;
+    width: 964px;
+    text-align: center;
+}
+
+.tabela thead {
+    display: table-header-group
+}
+
+.tabela table thead tr {
+    display: table-row;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+    background: #FAFAFA;
+    height: 58px;
+}
+
+.tabela table tbody {
+    display: table-row-group
+}
+
+.tabela table tbody tr {
+    height: 58px;
+}
+
+.table table td,
+th {
+    display: table-cell
+}
+
+.total-ex-im {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 15px;
+    height: 350px;
+    width: 350px;
+    box-shadow: 0px 2px 11px rgba(0, 0, 0, 0.1);
+}
+
+.exportacao,
+.importacao {
+    display: flex;
+    gap: 20px;
+}
+
+.exportacao h1,
+.importacao h1 {
+    font-size: 20px;
+    color: rgb(15, 15, 15);
+}
+
+.total-ex-im button {
+    all: unset;
+    height: 40px;
+    width: 300px;
+    color: #FAFAFA;
+    background-color: #093992;
+    text-align: center;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 12px;
+}
